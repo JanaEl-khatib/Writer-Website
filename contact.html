@@ -1,0 +1,61 @@
+<!--Project Name: A Simple Website
+Author: Jana El-Khatib
+Date Last Modified: 7/23/2024-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Contact - A Writer Story
+    </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <img src="logo.png" alt="Logo" class="logo">
+                <ul>
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="about.html"> About Us </a></li>
+                    <li><a href="contact.html"> Contact Us </a></li>
+                </ul>
+            </nav>
+            <h1>Contact Us!</h1>
+        </header>
+        <main>
+            <h2>Get in Touch!</h2>
+            <p>
+                If you have any questions or would like to know more, call us or email us using the information
+                below!
+            </p>
+            <h3>Email:</h3>
+            <a href="mailto:JanaEl-Khatib@myWriter.com">JanaEl-Khatib@myWriter.com</a>
+            <h3>Phone Number:</h3>
+            <a href="tel:833-333-333">833-333-333</a>
+            <h2>Other Option: Leave a comment!</h2>
+            <form method="post" action="store_all.php"> <!--This section is changed in the website link-->
+                <label for="myFName">First Name:</label><br>
+                <input type="text" id="myFName" name="myFName" required><br>
+                <label for="myLName">Last Name:</label><br>
+                <input type="text" id="myLName" name="myLName" required><br>
+                <label for="myEmail">E-mail:</label><br>
+                <input type="email" id="myEmail" name="myEmail" required><br>
+                <label for="myNumber">Phone Number:</label><br>
+                <input type="tel" id="myNumber" name="myNumber" required><br>
+                <label for="myComments"><span>*</span>Comments:</label><br>
+                <textarea id="myComments" name="myComments" rows="6" cols="40" required></textarea><br>
+                <input type="submit" id="mySubmit" value="Submit">
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Jana El-Khatib. All rights reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>

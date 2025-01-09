@@ -1,0 +1,392 @@
+/* Project Name: A Simple Website
+   Author: Jana El-Khatib
+   Date Last Modified: 7/23/2024
+*/
+
+body {
+   background: linear-gradient(135deg, #f5deb3, #d2b48c);
+   /* Gradient of wheat and tan */
+   color: #4b3832;
+   /* Dark brown text */
+   font-family: 'Georgia', serif;
+   line-height: 1.8;
+   margin: 0;
+   padding: 0;
+   /* Remove default padding from body */
+   display: flex;
+   flex-direction: column;
+   min-height: 50px;
+}
+
+header,
+footer {
+   background-color: #fdf5e6;
+   /* Old Lace background */
+   padding: 10px 0;
+   text-align: center;
+   border-bottom: 1px solid #deb887;
+   /* Burlywood border */
+}
+
+footer {
+   font-weight: bold;
+   font-style: italic;
+   margin: 0;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-left: 0px;
+}
+
+nav .logo {
+   width: 140px;
+   height: auto;
+}
+
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   color: #cd853f;
+   /* Peru accents */
+   text-decoration: none;
+   display: block;
+   /* Display links as block elements */
+   margin: 0;
+   padding: 0;
+   margin-bottom: 10px;
+}
+
+nav a:link {
+   color: #c69962;
+}
+
+nav a:visited {
+   color: #cd853f;
+}
+
+nav a:hover {
+   color: #a0522d;
+   text-decoration: underline;
+}
+
+header {
+   grid-column: 1 / 3;
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+header nav {
+   flex: 0 0 auto;
+   margin-right: 20px;
+}
+
+header h1 {
+   flex: 1 1 auto;
+   margin: 0 80px;
+}
+
+h1,
+h2,
+h3 {
+   color: #4b3832;
+   /* Dark brown for headings */
+   margin-bottom: 20px;
+}
+
+p {
+   margin-bottom: 20px;
+}
+
+main {
+   grid-column: 1 / 3;
+   padding: 20px;
+   background-color: #fff5e1;
+   border-radius: 10px;
+}
+
+dt {
+   font-weight: bold;
+}
+
+table {
+   width: 80%;
+   border-collapse: collapse;
+}
+
+th,
+td {
+   border: 1px solid #deb887;
+   padding: 8px;
+   text-align: left;
+}
+
+th {
+   background-color: #fff8dc;
+   font-weight: bold;
+}
+
+tr:nth-child(even) {
+   background-color: #fdf5e6;
+}
+
+.wrapper {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   max-width: 1200px;
+   margin: 0 auto;
+   background-color: rgba(255, 248, 220, 0.9);
+   /* Cornsilk with slight transparency */
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   /* Soft shadow for a lifted effect */
+   border-radius: 10px;
+   border: 2px solid #deb887;
+   padding: 20px;
+}
+
+/* Leaf Image */
+
+.leaf {
+   display: flex;
+   /* Use flexbox to align items horizontally */
+   align-items: center;
+   /* Center items vertically */
+}
+
+.leaf h2 {
+   font-size: 1.5em;
+   /* Adjust font size */
+}
+
+.leaf .leaf-picture {
+   margin-top: -75px;
+   /* Moving the image up */
+   margin-left: 7px;
+   /* Adding space between the image and text */
+   width: 105px;
+   /* Adjust width as needed */
+   height: auto;
+   /* Maintain aspect ratio */
+   display: block;
+   /* Ensure image displays properly */
+   transform: rotate(10deg);
+   transform-origin: center;
+}
+
+/* Style for the details section */
+.details {
+   display: flex;
+   align-items: flex-start;
+   gap: 20px;
+}
+
+.details img.floatleft {
+   width: 200px;
+   height: auto;
+}
+
+.details ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+
+.details li {
+   margin-bottom: 10px;
+}
+
+.details h3 {
+   margin: 0;
+   display: inline;
+}
+
+.details p {
+   display: inline;
+   margin-left: 10px;
+}
+
+/*Form CSS*/
+label {
+   float: left;
+   display: block;
+   width: 8em;
+   padding-right: 1em;
+}
+
+input,
+textarea {
+   display: block;
+   margin-bottom: 1em;
+}
+
+#mySubmit {
+   margin-left: 10em;
+}
+
+/* Tablet CSS */
+@media only screen and (max-width: 1024px) {
+   body {
+      margin: 0;
+   }
+
+   h1 {
+      margin-top: 0;
+      margin-bottom: 1em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      font-size: 2.5em;
+      text-align: center;
+   }
+
+   nav {
+      float: none;
+      width: auto;
+      padding-top: 0;
+      margin: 10px;
+      font-size: 1.3em;
+      flex-direction: column;
+   }
+
+   nav li {
+      display: inline-block;
+   }
+
+   nav a {
+      padding: 1em;
+      width: 8em;
+      font-weight: bold;
+      border-style: none;
+   }
+
+   nav ul {
+      padding: 0;
+      margin: 0;
+   }
+
+   main {
+      margin: 0;
+      font-size: 90%;
+   }
+
+   nav .logo {
+      width: 180px;
+      height: auto;
+   }
+
+   /* Image Pastel */
+   .leaf-pastel,
+   .leaf-pastel2,
+   .leaf-pastel2 {
+      background-image: none;
+   }
+}
+
+/* Smartphone CSS */
+@media only screen and (max-width: 768px) {
+   h1 {
+      font-size: 2em;
+      text-align: center;
+      padding-left: 0;
+   }
+
+   nav {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   nav a {
+      display: block;
+      padding: 0.2em;
+      width: auto;
+      border-bottom: solid 1px #FEF6C2;
+   }
+
+   nav li {
+      display: block;
+   }
+
+   main {
+      padding-top: 1px;
+   }
+
+   h2 {
+      padding-top: 0.5em;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 0.5em;
+      margin-right: 0.5em;
+   }
+
+   .details {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+      padding-right: 0;
+   }
+
+   .details img.floatleft {
+      width: 100%;
+      max-width: 300px;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      margin-bottom: 20px;
+      /* Adds space below the image */
+   }
+
+   .details ul {
+      padding-left: 1em;
+      padding-right: 1em;
+      text-align: center;
+   }
+
+   .details li {
+      margin-bottom: 20px;
+   }
+
+   #mobile {
+      display: inline;
+   }
+
+   #desktop {
+      display: none;
+   }
+
+   /* Logo Image */
+   nav .logo {
+      width: 160px;
+      height: auto;
+   }
+
+   nav {
+      display: flex;
+      align-items: center;
+      margin-left: 70px;
+      /* Adjust margin to make room for the logo */
+   }
+
+   /* Leaf Image */
+   .leaf .leaf-picture {
+      margin-top: -75px;
+      /* Moving the image up */
+      margin-left: -5px;
+      /* Adding space between the image and text */
+      width: 105px;
+      /* Adjust width as needed */
+      height: auto;
+      /* Maintain aspect ratio */
+      display: block;
+      /* Ensure image displays properly */
+      transform: rotate(10deg);
+      transform-origin: center;
+   }
+}
